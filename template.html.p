@@ -9,7 +9,7 @@
     <title>◊|title|</title>
     <link rel="stylesheet" type="text/css" media="all" href="/styles.css" />
   </head>
-  <body class="lang-racket">
+  <body>
     <header class="main">
       <div class="site-identity">
 	<h1><a href="/index.html" class="home">Miró Allard</a></h1>
