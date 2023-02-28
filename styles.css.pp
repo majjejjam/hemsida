@@ -36,7 +36,7 @@
 html {
     font-family: AlegreyaSans, CooperHewitt, sans-serif;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
 main {
     width: 600px;
     margin: auto;
-    line-height: 1.5;
+    line-height: 24px;
 }
 
 header {
@@ -68,9 +68,9 @@ header a:hover {
 }
 
 header h1 {
-    font-size: 2em;
-    margin: 0.6em 0;
-    font-variant-caps: all-small-caps;
+    font-size: 1.5em;
+    margin: 1.8em 0.2em;
+    text-transform: uppercase;
     letter-spacing: 0.1em;
     display: inline-block;
 }
@@ -82,8 +82,10 @@ header li {
 }
 
 h1 {
-  margin: 0;
-  padding: 20px 0;
+    letter-spacing: -1px;
+    font-size: 24px;
+    margin-top: 1.4rem;
+    margin-bottom: 0.4rem;
 }
 
 img {
