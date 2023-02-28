@@ -41,6 +41,7 @@ body {
 
 p {
     width: 600px;
+    margin: auto;
     line-height: 1.5;
 }
 
