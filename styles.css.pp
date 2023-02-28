@@ -85,3 +85,8 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+abbr {
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.1em;
+}
