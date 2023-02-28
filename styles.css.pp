@@ -36,6 +36,7 @@ html {
 
 body {
     background-color: #fafafa;
+    margin: 0;
 }
 
 p {
@@ -44,8 +45,7 @@ p {
 }
 
 header {
-    font-size: 20px;
-    padding: .5em 1em;
+    padding: .5em 2em;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -62,14 +62,17 @@ header a:hover {
 }
 
 header h1 {
-    float: left;
+    font-size: 2em;
+    margin: 0.6em 0;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.1em;
     display: inline-block;
 }
 
 header li {
-    display: inline;
-    float: right;
-    padding-left: 45px;
+    font-size: 1.5em;
+    margin: 1.2em 1em 1em 1em;
+    display: inline-block;
 }
 
 h1 {
