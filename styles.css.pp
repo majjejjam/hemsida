@@ -12,6 +12,11 @@
     src: url('fonts/alegreya-sans/alegreyasans-regular-webfont.woff') format('woff');
 }
 
+@font-face {
+    font-family: AlegreyaSansSc;
+    src: url('fonts/alegreya-sans/alegreyasanssc-regular-webfont.woff') format('woff');
+}
+
 * {
     text-rendering: optimizelegibility;
     -moz-font-feature-settings: 'kern=1';
@@ -86,7 +91,13 @@ img {
   margin: 0 auto;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
 abbr {
-    font-variant-caps: all-small-caps;
-    letter-spacing: 0.1em;
+    font-family: AlegreyaSansSc;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
 }
