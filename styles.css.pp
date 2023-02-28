@@ -107,3 +107,16 @@ abbr {
 q {
     quotes: "»" "«" "’" "’";
 }
+
+a[href^="http"]::after,
+a[href^="https://"]::after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    margin-left: 4px;
+    background-image: url("assets/step-out-symbolic.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
