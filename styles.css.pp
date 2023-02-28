@@ -103,3 +103,7 @@ abbr {
     letter-spacing: 0.06em;
     text-transform: lowercase;
 }
+
+q {
+    quotes: "»" "«" "’" "’";
+}
