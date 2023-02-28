@@ -39,7 +39,7 @@ body {
     margin: 0;
 }
 
-p {
+main {
     width: 600px;
     margin: auto;
     line-height: 1.5;
