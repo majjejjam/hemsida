@@ -2,19 +2,34 @@
 
 @font-face {
     font-family: CooperHewitt;
-    src: url('fonts/CooperHewitt-Book.woff') format('woff');
+    src: url('fonts/cooper-hewitt/CooperHewitt-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: AlegreyaSans;
-    src: url('fonts/alegreya-sans/alegreyasans-regular-webfont.woff') format('woff');
+    src: url('fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: AlegreyaSansSc;
-    src: url('fonts/alegreya-sans/alegreyasanssc-regular-webfont.woff') format('woff');
+    src: url('fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSansSC-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Alegreya;
+    src: url('fonts/alegreya-ht-pro-full-pack-webfonts/Alegreya-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: AlegreyaSc;
+    src: url('fonts/alegreya-ht-pro-full-pack-webfonts/AlegreyaSc-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: CrimsonPro;
+    src: url('fonts/crimson-pro/CrimsonPro-Regular.woff2') format('woff2');
 }
 
 * {
@@ -34,63 +49,84 @@
 }
 
 html {
-    font-family: AlegreyaSans, CooperHewitt, sans-serif;
+    font-family: CrimsonPro, AlegreyaSans, CooperHewitt, sans-serif;
     box-sizing: border-box;
     font-size: 20px;
 }
 
 body {
     background-color: #fafafa;
-    margin: 0;
+    margin-block: 1em;
+    margin-inset: 0.5em;
+    line-height: 1.5;
+    position: relative;
 }
 
 main {
-    width: 600px;
+    max-width: 600px;
+    display: flex;
     margin: auto;
-    line-height: 24px;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
-header {
-    padding: .5em 2em;
-    overflow: hidden;
+.site-header {
+    font-family: AlegreyaSans;
+    padding: 0.5em 1em;
+    color: black;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
+.site-header a {
+    color: black;
+    
+}
+
+.site-header a:visited {
+    color: black;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0.6em 0;
+    display: inline-block;
+}
+
 a {
-    color: #333;
+    color: #1a5fb4;
     text-decoration: none;
     transition: 0.3s ease;
+}
+
+a:visited {
+    color: #613583;
 }
 
 header a:hover {
     color: #5315;
 }
 
-header h1 {
-    font-size: 1.5em;
-    margin: 1.8em 0.2em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    display: inline-block;
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
 }
 
-header li {
-    font-size: 1.5em;
-    margin: 1.2em 1em 1em 1em;
+.site-navigation li {
+    font-size: 1.2em;
     display: inline-block;
+    margin: 1.2em 1em 1.1em 1em;
 }
 
 h1 {
-    letter-spacing: -1px;
+    letter-spacing: -0.01em;
     font-size: 24px;
     margin-top: 1.4rem;
     margin-bottom: 0.4rem;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
 }
 
 p {
@@ -100,7 +136,7 @@ p {
 
 abbr {
     font-family: AlegreyaSansSc;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.075em;
     text-transform: lowercase;
 }
 
@@ -108,8 +144,7 @@ q {
     quotes: "»" "«" "’" "’";
 }
 
-a[href^="http"]::after,
-a[href^="https://"]::after {
+a[href^="http"]::after {
     content: "";
     width: 11px;
     height: 11px;
@@ -119,4 +154,13 @@ a[href^="https://"]::after {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+    overflow: hidden;
+}
+
+/* images and videos max out at full width */
+img,
+picture,
+video {
+    height: auto;
+    max-width: 100%;
 }
