@@ -16,7 +16,6 @@
       <nav class="site-navigation">
         <ul class="nav">
           <li><a href="/index.html">Hem</a></li>
-          <li><a href="/gallery.html">Galleri</a></li>
           <li><a href="/about.html">Om</a></li>
         </ul>
       </nav>
