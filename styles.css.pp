@@ -17,6 +17,14 @@
 }
 
 @font-face {
+    font-family: AlegreyaSans;
+    src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Bold.woff2') format('woff2'),
+	 url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: AlegreyaSansSc;
     src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSansSC-Regular.woff2') format('woff2');
 }
@@ -210,6 +218,15 @@ h2 {
     margin-bottom: 0.4rem;
 }
 
+h3 {
+    font-family: AlegreyaSans;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 1em;
@@ -352,21 +369,34 @@ dquo-pull {
 	color: #fefefe;
 	background-color: #242424;
     }
+    
     img {
 	filter: brightness(.8) contrast(1.2);
     }
+    
     code {
 	background-color: #414141;
     }
+    
     a[href^="http"]::after {
 	filter: invert(0.98);
     }
+    
+    footer .github::after {
+	background-image: url("assets/icons/github-mark/github-mark-white.svg");
+    }
+    
     .site-header a,
     .site-header a:visited,
-footer a,
-footer a:visited {
+    footer a,
+    footer a:visited {
     color: #fefefe
-}
+    }
+    
+    a {
+	color: #90B4D8;
+    }
+    
     a:visited {
 	color: #D890D8;
     }
