@@ -10,19 +10,26 @@
     <link rel="stylesheet" type="text/css" media="all" href="/styles.css" />
   </head>
   <body>
-    <header class="main">
-      <div class="site-identity">
-	<h1><a href="/index.html" class="home">Miró Allard</a></h1>
-      </div>
-      <nav>
-        <ul>
+    <!-- Header -->
+    <header class="site-header">
+      <a class="skip-link" href='#main'>Hoppa till innehåll</a>
+      <nav class="site-navigation">
+        <ul class="nav">
+          <li><a href="/index.html">Hem</a></li>
           <li><a href="/gallery.html">Galleri</a></li>
           <li><a href="/about.html">Om</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <!-- Content -->
+    <main id="main">
       ◊(->html doc)
     </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <ul>
+        <li><a href="https://github.com/majjejjam/web" class="github">Källkod</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
