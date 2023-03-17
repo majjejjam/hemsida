@@ -1,35 +1,49 @@
 #lang pollen
 
 @font-face {
-    font-family: CooperHewitt;
-    src: url('fonts/cooper-hewitt/CooperHewitt-Book.woff') format('woff');
-    font-weight: normal;
+    font-family: AlegreyaSans;
+    src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Regular.woff2') format('woff2'),
+	 url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Regular.woff') format('woff');
+    font-style: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: AlegreyaSans;
-    src: url('fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Regular.woff2') format('woff2');
+    src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Italic.woff2') format('woff2'),
+	 url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
     font-family: AlegreyaSansSc;
-    src: url('fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSansSC-Regular.woff2') format('woff2');
+    src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSansSC-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: Alegreya;
-    src: url('fonts/alegreya-ht-pro-full-pack-webfonts/Alegreya-Regular.woff2') format('woff2');
+    src: url('assets/fonts/alegreya-ht-pro-full-pack-webfonts/Alegreya-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: AlegreyaSc;
-    src: url('fonts/alegreya-ht-pro-full-pack-webfonts/AlegreyaSc-Regular.woff2') format('woff2');
+    src: url('assets/fonts/alegreya-ht-pro-full-pack-webfonts/AlegreyaSc-Regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: CrimsonPro;
-    src: url('fonts/crimson-pro/CrimsonPro-Regular.woff2') format('woff2');
+    font-family: Vollkort;
+    src: url('assets/fonts/Vollkorn/Vollkorn-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Rakkas;
+    src: url('assets/fonts/rakkas-regular.woff') format('woff');    
+}
+
+@font-face {
+    font-family: Fantasque;
+    src: url('assets/fonts/FantasqueSansMono-NoLoopK/Webfonts/FantasqueSansMono-Regular.woff2') format('woff2');    
 }
 
 * {
