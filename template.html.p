@@ -27,7 +27,7 @@
     <!-- Footer -->
     <footer class="site-footer">
       <ul>
-        <li><a href="https://github.com/majjejjam/web" class="github">Källkod</a></li>
+        <li><a href="https://github.com/majjejjam/hemsida" class="github">Källkod</a></li>
       </ul>
     </footer>
   </body>

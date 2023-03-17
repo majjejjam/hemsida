@@ -9,7 +9,7 @@ Hej, läsare kär. Varmt välkommen. Jag heter Miró -- det är min hemsida du h
 Ingen vet vad jag kommer lägga upp här, men allt kommer vidröra ämnen som intresserar ◊em{mig} och vara formulerat med ord ◊em{jag} vill läsa. I ärlighetens namn skriver jag mest för min egen skull. Så om du är något som mig gör jag det även för din.
 
 ◊h2{Godhet}
-Denna hemsida är ungefär lika mycket min som din. All kod som får den att fungera, alla texter som fyller dess sidor, ◊link["https://github.com/majjejjam/web"]{utvecklas öppet} under en ◊link["https://sv.wikipedia.org/wiki/Copyleft"]{Copyleft-licens}. Det ger dig en frihet som du säkert inte är van med. Men du förtjänar den. Mer information finns under fliken ◊link["../about.html"]{om}.
+Denna hemsida är ungefär lika mycket min som din. All kod som får den att fungera, alla texter som fyller dess sidor, ◊link["https://github.com/majjejjam/hemsida"]{utvecklas öppet} under en ◊link["https://sv.wikipedia.org/wiki/Copyleft"]{Copyleft-licens}. Det ger dig en frihet som du säkert inte är van med. Men du förtjänar den. Mer information finns under fliken ◊link["../about.html"]{om}.
 
 Det finns en vanlig, men inte strikt nödvändig, följd av denna öppenhet: respekt för din integritet. Den här hemsidan analyserar inte ditt användande och lagrar heller inte någon information om dig. Du, kära läsare, respekteras.
 
