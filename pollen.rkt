@@ -3,6 +3,7 @@
 (require pollen/decode pollen/misc/tutorial txexpr)
 (require racket/string racket/list)
 (require pollen/tag pollen/template pollen/core sugar/coerce)
+(require pollen/tag pollen/template pollen/core txexpr sugar/coerce)
 
 (provide (all-defined-out))
 
@@ -43,12 +44,7 @@
 
 (define (node->link node)
   (define node-string (->string node))
-  (define link-name (or (select-from-metas 'title node) node-string))
-  (link (string-append "/" node-string) link-name))
-
-(define (node->date node)
-  (define node-string (->string node))
-  (define date (or (select-from-metas 'date node) node-string))
+  (define link-name (or (select-from-metas 'title node) (select 'h1 (get-doc node)) node-string))
   (link (string-append "/" node-string) link-name))
 
 (define (root . elements)
