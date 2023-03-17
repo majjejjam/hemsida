@@ -157,6 +157,15 @@ a[href^="http"]::after {
     overflow: hidden;
 }
 
+footer .github::after {
+    background-image: url("assets/icons/github-mark/github-mark.svg");
+    width: 1em;
+    height: 1em;
+    opacity: 0.9;
+    margin-bottom: -0.3em;
+    padding-bottom: 0.3em;
+}
+
 /* images and videos max out at full width */
 img,
 picture,
