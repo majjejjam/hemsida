@@ -63,51 +63,156 @@
 }
 
 html {
-    font-family: CrimsonPro, AlegreyaSans, CooperHewitt, sans-serif;
+    font-family: Vollkorn, AlegreyaSans, sans-serif;
     box-sizing: border-box;
+    height: 100%;
     font-size: 20px;
 }
 
 body {
-    background-color: #fafafa;
+    color: #111111;
+    background-color: #fefefe;
+    min-height: 100%;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
     margin-block: 1em;
     margin-inset: 0.5em;
     line-height: 1.5;
-    position: relative;
 }
 
 main {
-    max-width: 600px;
-    display: flex;
-    margin: auto;
+    max-width: 30rem;
+    text-align: left;
+    margin-left: 2em;
+    margin-right: auto;
+    grid-column: 1;
+    grid-row: 1;
     overflow-wrap: break-word;
     hyphens: auto;
 }
 
 .site-header {
     font-family: AlegreyaSans;
-    padding: 0.5em 1em;
-    color: black;
-    display: flex;
+    text-transform: lowercase;
+    grid-row: 1;
+    grid-column: 2;
+    padding-top: 2em;
+    padding-right: calc(2em + 2.5vw);
     align-items: center;
+    justify-self: right;
+}
+
+.site-header a,
+.site-header a:visited,
+footer a,
+footer a:visited {
+    color: black;
+}
+
+.skip-link {
+    color: #fff;
+    font-weight: 700;
+    left: 50%;
+    padding: 4px;
+    position: absolute;
+    transform: translate(100%,-300%);
+  
+}
+
+.skip-link:focus {
+    transform: translate(100%,-100%);
+    transition: transform 0.3s;
+}
+
+header a:hover {
+    color: #5315;
+}
+
+.site-navigation ul,
+.site-navigation li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    font-size: 1.2em;
+    /* margin: 1.2em 1em 1.1em 1em; */
+}
+
+.site-identity {
+    font-family: Rakkas;
+    font-style: normal;
+    opacity: 0.8;
+    font-size: calc(5em + 2.5vw);
+    line-height: 0.9;
+    text-align: center;
+    background-image: url("assets/site-identinty-background.svg");
+    background-position: 0 -1em;
+    background-clip: initial;
+    background-size: 100%;
+    padding: 1em;
+    margin: -1em;
+    margin-bottom: -0.5em;
+}
+
+footer {
+    font-family: AlegreyaSans;
+    font-size: 80%;
+    grid-row: 2;
+    grid-column-start: 1;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+footer ul {
+    align-self: center;
+}
+
+footer li {
+    list-style: none;
+    display: inline-block;
+}
+
+.posts {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+.posts li {
+    display: flex;
     justify-content: space-between;
 }
 
-.site-header a {
-    color: black;
-    
+.post-date {
+    font-size: 80%;
+    float: right;
 }
 
-.site-header a:visited {
-    color: black;
+h1 {
+    font-family: AlegreyaSans;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    font-size: calc(1em + 2.5vw);
+    margin-top: 1.6rem;
+    margin-bottom: 0.4rem;
 }
 
-.site-identity h1 {
-    font-size: 1.5em;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin: 0.6em 0;
-    display: inline-block;
+h2 {
+    font-family: AlegreyaSans;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.4em;
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 a {
@@ -120,37 +225,16 @@ a:visited {
     color: #613583;
 }
 
-header a:hover {
-    color: #5315;
-}
-
-.site-navigation ul,
-.site-navigation li {
-    margin: 0;
-    padding: 0;
-}
-
-.site-navigation li {
-    font-size: 1.2em;
-    display: inline-block;
-    margin: 1.2em 1em 1.1em 1em;
-}
-
-h1 {
-    letter-spacing: -0.01em;
-    font-size: 24px;
-    margin-top: 1.4rem;
-    margin-bottom: 0.4rem;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1em;
+code {
+    font-family: Fantasque;
+    background: #eee;
+    padding: 0 0.1em;
+    font-size: 90%;
 }
 
 abbr {
-    font-family: AlegreyaSansSc;
-    letter-spacing: 0.075em;
+    font-variant-caps: small-caps;
+    letter-spacing: 0.05em;
     text-transform: lowercase;
 }
 
@@ -162,8 +246,8 @@ a[href^="http"]::after {
     content: "";
     width: 11px;
     height: 11px;
-    margin-left: 4px;
-    background-image: url("assets/step-out-symbolic.svg");
+    margin-left: 0.25em;
+    background-image: url("assets/icons/step-out-symbolic.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
