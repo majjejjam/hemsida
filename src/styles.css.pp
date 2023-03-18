@@ -2,56 +2,56 @@
 
 @font-face {
     font-family: AlegreyaSans;
-    src: url('../assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Regular.woff2') format('woff2'),
-	 url('../assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Regular.woff') format('woff');
+    src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Regular.woff2') format('woff2'),
+	 url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Regular.woff') format('woff');
     font-style: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: AlegreyaSans;
-    src: url('../assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Italic.woff2') format('woff2'),
-	 url('../assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Italic.woff') format('woff');
+    src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Italic.woff2') format('woff2'),
+	 url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: AlegreyaSans;
-    src: url('../assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Bold.woff2') format('woff2'),
-	 url('../assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Bold.woff') format('woff');
+    src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Bold.woff2') format('woff2'),
+	 url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: AlegreyaSansSc;
-    src: url('../assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSansSC-Regular.woff2') format('woff2');
+    src: url('assets/fonts/alegreya-sans-ht-full-pack-webfonts/AlegreyaSansSC-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: Alegreya;
-    src: url('../assets/fonts/alegreya-ht-pro-full-pack-webfonts/Alegreya-Regular.woff2') format('woff2');
+    src: url('assets/fonts/alegreya-ht-pro-full-pack-webfonts/Alegreya-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: AlegreyaSc;
-    src: url('../assets/fonts/alegreya-ht-pro-full-pack-webfonts/AlegreyaSc-Regular.woff2') format('woff2');
+    src: url('assets/fonts/alegreya-ht-pro-full-pack-webfonts/AlegreyaSc-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: Vollkort;
-    src: url('../assets/fonts/Vollkorn/Vollkorn-Regular.woff2') format('woff2');
+    src: url('assets/fonts/Vollkorn/Vollkorn-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: Rakkas;
-    src: url('../assets/fonts/rakkas-regular.woff') format('woff');    
+    src: url('assets/fonts/rakkas-regular.woff') format('woff');    
 }
 
 @font-face {
     font-family: Fantasque;
-    src: url('../assets/fonts/FantasqueSansMono-NoLoopK/Webfonts/FantasqueSansMono-Regular.woff2') format('woff2');    
+    src: url('assets/fonts/FantasqueSansMono-NoLoopK/Webfonts/FantasqueSansMono-Regular.woff2') format('woff2');    
 }
 
 * {
@@ -157,7 +157,7 @@ header a:hover {
     font-size: calc(5em + 2.5vw);
     line-height: 0.9;
     text-align: center;
-    background-image: url("../assets/site-identinty-background.svg");
+    background-image: url("assets/site-identinty-background.svg");
     background-position: 0 -1em;
     background-clip: initial;
     background-size: 100%;
@@ -264,7 +264,7 @@ a[href^="http"]::after {
     width: 11px;
     height: 11px;
     margin-left: 0.25em;
-    background-image: url("../assets/icons/step-out-symbolic.svg");
+    background-image: url("assets/icons/step-out-symbolic.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -273,7 +273,7 @@ a[href^="http"]::after {
 }
 
 footer .github::after {
-    background-image: url("../assets/icons/github-mark/github-mark.svg");
+    background-image: url("assets/icons/github-mark/github-mark.svg");
     width: 1em;
     height: 1em;
     opacity: 0.9;
@@ -383,7 +383,7 @@ dquo-pull {
     }
     
     footer .github::after {
-	background-image: url("../assets/icons/github-mark/github-mark-white.svg");
+	background-image: url("assets/icons/github-mark/github-mark-white.svg");
     }
     
     .site-header a,
