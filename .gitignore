@@ -1,0 +1,14 @@
+# Racket artifacts
+compiled/
+*~
+\#*
+.#*
+*.bak
+
+# Pollen artifacts
+*.html
+*.css
+*.js
+*.txt
+*.xml
+build/
