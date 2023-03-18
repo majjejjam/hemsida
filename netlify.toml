@@ -3,7 +3,7 @@
   command = """
     raco pkg install \
     --catalog "https://pkgs.racket-lang.org" \
-    --binary --no-docs --auto pollen  &&
+    --no-docs --auto pollen  &&
     mkdir build &&
     raco pollen publish src build
     """
