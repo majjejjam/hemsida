@@ -2,7 +2,7 @@
   publish = "build"
   command = """
     raco pkg install \
-    --no-docs pollen  &&
+    --batch --no-docs pollen  &&
     mkdir build &&
     raco pollen publish src build
     """
