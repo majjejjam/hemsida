@@ -1,0 +1,5 @@
+* Min hemsida
+Det här förrådet innehåller all kod, text och media som återfinns på
+[[https://miroallard.com][min hemsida]]. För att bygga hemsidan på din egen dator behöver du
+installera mjukvaran [[https://docs.racket-lang.org/pollen/][Pollen]]. En färdigbyggd version finns att tillgå
+under grenen ~publish~.
