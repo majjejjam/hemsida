@@ -159,11 +159,12 @@ header a:hover {
     text-align: center;
     background-image: url("assets/site-identinty-background.svg");
     background-position: 0 -1em;
-    background-clip: initial;
     background-size: 100%;
     padding: 1em;
     margin: -1em;
     margin-bottom: -0.5em;
+    z-index: -1;
+    position: relative;
 }
 
 footer {
