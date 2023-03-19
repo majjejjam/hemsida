@@ -164,7 +164,6 @@ header a:hover {
     padding: 1em;
     margin: -1em;
     margin-bottom: -0.5em;
-    z-index: -1;
     position: relative;
 }
 
@@ -337,10 +336,10 @@ dquo-pull {
 	background-repeat: no-repeat;
 	padding: initial;
 	margin: initial;
-	padding-bottom: 0.5em;
-	margin-bottom: -0.5em;
-	padding-top: 0.5em;
-	margin-top: -0.5em;
+	padding-bottom: 0.4em;
+	margin-bottom: -0.4em;
+	padding-top: 0.4em;
+	margin-top: -0.4em;
     }
 
     .site-navigation ul,
