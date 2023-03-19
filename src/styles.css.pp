@@ -72,17 +72,6 @@
 
 * {
     text-rendering: optimizelegibility;
-    -moz-font-feature-settings: 'kern=1';
-    -moz-font-feature-settings: 'kern' 1;
-    -webkit-font-feature-settings: 'kern' 1;
-    -o-font-feature-settings: 'kern' 1;
-    -ms-font-feature-settings: 'kern' 1;
-    font-feature-settings: 'kern' 1;
-    -moz-font-feature-settings: 'liga=1';
-    -moz-font-feature-settings: 'liga' 1;
-    -webkit-font-feature-settings: 'liga' 1;
-    -o-font-feature-settings: 'liga' 1;
-    -ms-font-feature-settings: 'liga' 1;
     font-feature-settings: 'liga' 1;
 }
 
