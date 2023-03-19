@@ -5,7 +5,7 @@
 
 Denna hemsida är skapad med ren ◊abbr{HTML} och ◊abbr{CSS}, samt ett språk vid namn ◊a[#:href "https://docs.racket-lang.org/pollen/"]{Pollen}. Källkoden finns tillgänglig på ◊a[#:href "https://github.com/"]{Github} under licensen ◊link["https://mit-license.org/"]{◊abbr{MIT}}.
 
-Om du upptäcker några fel, språkliga som programartade, välkomnar jag dig att ◊link["https://github.com/majjejjam/hemsida/issues"]{öppna ett ärende}. På samma sätt kan du även föerlslå andra förbättringar och idéer. Viktigt att förstå är att hela hemsidan, med allt dess innehåll och kod, är ◊link["https://www.gnu.org/philosophy/free-sw.html"]{fri mjukvara}, vilket tillåter dig att
+Om du upptäcker några fel, språkliga som programartade, välkomnar jag dig att ◊link["https://github.com/majjejjam/hemsida/issues"]{öppna ett ärende}. På samma sätt kan du även föreslå andra förbättringar och idéer. Viktigt att förstå är att hela hemsidan, med allt dess innehåll och kod, är ◊link["https://www.gnu.org/philosophy/free-sw.html"]{fri mjukvara}, vilket tillåter dig att
 
 ◊ol[#:start "0"]{
 ◊li{Navigera och konsumera det den har att erbjuda}
