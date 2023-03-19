@@ -30,7 +30,7 @@ jobs:
           version: '8.8'
 
       - name: Install Pollen       
-        run: raco pkg install --skip-installed --auto pollen gregor
+        run: raco pkg install --skip-installed --no-docs --auto pollen gregor
 
       - name: Build and Publish Pollen Source Files
         run: mkdir build && raco pollen render src && raco pollen publish src build
