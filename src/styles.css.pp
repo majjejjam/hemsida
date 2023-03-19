@@ -87,11 +87,8 @@ body {
     background-color: #fefefe;
     min-height: 100%;
     display: grid;
-    gap: 2em;
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr auto;
-    margin-block: 1em;
-    margin-inset: 0.5em;
     line-height: 1.5;
 }
 
@@ -113,6 +110,7 @@ main {
     grid-column: 2;
     padding-top: 2em;
     padding-right: calc(2em + 2.5vw);
+    position: relative;
     align-items: center;
     justify-self: right;
 }
@@ -192,7 +190,8 @@ footer li {
 
 .posts {
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    padding-left: 0;
 }
 
 .posts li {
@@ -210,7 +209,7 @@ h1 {
     font-weight: normal;
     font-style: italic;
     letter-spacing: -0.01em;
-    font-size: calc(1em + 2.5vw);
+    font-size: calc(1.4em + 2vw);
     margin-top: 1.6rem;
     margin-bottom: 0.4rem;
 }
@@ -219,7 +218,7 @@ h2 {
     font-family: AlegreyaSans;
     font-weight: normal;
     font-style: normal;
-    font-size: 1.4em;
+    font-size: calc(1.2em + 1vw);
     margin-top: 0.6rem;
     margin-bottom: 0.4rem;
 }
@@ -228,7 +227,7 @@ h3 {
     font-family: AlegreyaSans;
     font-weight: normal;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: calc(1em + 1vw);
     margin-top: 0.6rem;
     margin-bottom: 0.4rem;
 }
@@ -313,9 +312,13 @@ dquo-pull {
 
     main {
 	grid-row: 2;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: 0.8em;
+	margin-right: 0.8em;
 	
+    }
+
+    h1 {
+	margin-top: 1rem;
     }
 
     footer {
@@ -337,14 +340,16 @@ dquo-pull {
 
     .site-identity {
 	background-size: contain;
-	background-position: center;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	padding: initial;
 	margin: initial;
+	z-index: -1;
+	position: relative;
 	padding-bottom: 0.4em;
 	margin-bottom: -0.4em;
 	padding-top: 0.4em;
-	margin-top: -0.4em;
+	margin-top: -0.2em;
     }
 
     .site-navigation ul,
