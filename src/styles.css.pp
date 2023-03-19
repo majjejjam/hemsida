@@ -383,11 +383,7 @@ dquo-pull {
     }
     
     a[href^="http"]::after {
-	filter: invert(0.98);
-    }
-    
-    footer .github::after {
-	background-image: url("assets/icons/github-mark/github-mark-white.svg");
+	filter: invert(1);
     }
     
     .site-header a,
