@@ -177,7 +177,7 @@ footer {
 }
 
 footer ul {
-    align-self: center;
+    padding-left: 0;
 }
 
 footer li {
@@ -322,8 +322,8 @@ dquo-pull {
 	grid-column: 1;
 	justify-self: center;
 	padding-top: 1em;
-	padding-right: auto;
-	padding-left: auto;
+	padding-right: initial;
+	padding-left: initial;
     }
 
     .site-header ul {
@@ -331,12 +331,15 @@ dquo-pull {
     }
 
     .site-identity {
-	background-size: 60%;
-	background-position: 1em 0.3em;
+	background-size: contain;
+	background-position: center;
 	background-repeat: no-repeat;
-	margin-bottom: -1em;
-	padding-left: auto;
-	padding-right: auto;
+	padding: initial;
+	margin: initial;
+	padding-bottom: 0.5em;
+	margin-bottom: -0.5em;
+	padding-top: 0.5em;
+	margin-top: -0.5em;
     }
 
     .site-navigation ul,
