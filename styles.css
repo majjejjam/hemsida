@@ -154,17 +154,18 @@ header a:hover {
 .site-identity {
     font-family: Rakkas;
     font-style: normal;
-    opacity: 0.8;
-    font-size: calc(5em + 2.5vw);
+    opacity: 0.9;
+    font-size: calc(4em + 2.5vw);
     line-height: 0.9;
     text-align: center;
-    background-image: url("assets/site-identinty-background.svg");
-    background-position: 0 -1em;
+    background-image: url("assets/site-identity-background/glas.png");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 1em;
-    margin: -1em;
-    margin-bottom: -0.5em;
+    background-size: contain;
+    padding: 0.3em;
+    margin: -0.3em;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
     position: relative;
 }
 
@@ -340,14 +341,12 @@ dquo-pull {
         background-size: contain;
         background-position: bottom;
         background-repeat: no-repeat;
-        padding: initial;
-        margin: initial;
         z-index: -1;
         position: relative;
-        padding-bottom: 0.4em;
-        margin-bottom: -0.4em;
-        padding-top: 0.4em;
-        margin-top: -0.2em;
+        padding: 0.2em;
+        margin: -0.2em;
+        margin-bottom: 0.4em;
+        margin-top: 0.2em;
     }
 
     .site-navigation ul,
