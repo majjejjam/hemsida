@@ -159,6 +159,7 @@ header a:hover {
     text-align: center;
     background-image: url("assets/site-identinty-background.svg");
     background-position: 0 -1em;
+    background-repeat: no-repeat;
     background-size: 100%;
     padding: 1em;
     margin: -1em;
