@@ -40,8 +40,24 @@
 }
 
 @font-face {
-    font-family: Vollkort;
+    font-family: Vollkorn;
     src: url('assets/fonts/Vollkorn/Vollkorn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vollkorn;
+    src: url('assets/fonts/Vollkorn/Vollkorn-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Vollkorn;
+    src: url('assets/fonts/Vollkorn/Vollkorn-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
