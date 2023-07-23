@@ -6,4 +6,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(pluginWebc);
     eleventyConfig.addPlugin(EleventyRenderPlugin);
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+    return {
+	dir: {
+	    input: "content",
+	    includes: "../_includes",
+	    data: "../_data",
+	    output: "_site"
+	},
+    };
 }
