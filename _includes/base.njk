@@ -8,9 +8,11 @@
 	<meta name="description" content="{{ description or metadata.description }}">
     </head>
     <body>
+	<a href="#skip" class="visually-hidden">Hoppa till innehåll</a>
+
 	<header>{{ title }}</header>
 
-	<main>
+	<main id="skip">
 	    {{ content | safe }}
 	</main>
 
