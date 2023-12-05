@@ -3,6 +3,7 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy")
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation")
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("../bundle.css");
     eleventyConfig.addPlugin(pluginWebc);
     eleventyConfig.addPlugin(EleventyRenderPlugin);
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
