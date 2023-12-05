@@ -70,3 +70,8 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+abbr {
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.1em;
+}
