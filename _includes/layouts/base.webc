@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html :lang="metadata.language">
+    <head>
+	      <meta charset="UTF-8">
+	      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	      <title @text="title || metadata.title"></title>
+	      <meta name="description" :content="description || metadata.description">
+	      <style @raw="getBundle('css')" webc:keep></style>
+	      <link rel="stylesheet" href="../../bundle.css">
+    </head>
+    <body>
+	      <center-l>
+	          <a href="#skip" class="visually-hidden">Hoppa till innehåll</a>
+	          <header class="main-nav">
+	              <cluster-l style="align-items: center; justify-content: space-between;">
+		                <a webc:if="page.url == '/'" :aria-current="page" class="current-page" @raw="metadata.title"></a>
+		                <a webc:else href="/" @raw="metadata.title"></a>
+
+		                <nav>
+		                    <cluster-l role="list" style="justify-content: flex-start;">
+			                      <div role="listitem" webc:for="item of $data.collections.nav">
+			                          <a webc:if="item.url == page.url" :aria-current="page" class="current-page" @raw="item.data.title"></a>
+			                          <a webc:else :href="item.url" @raw="item.data.title"></a>
+			                      </div>
+		                    </cluster-l>
+		                </nav>
+	              </cluster-l>
+	          </header>
+
+	          <box-l>
+		            <main id="skip" @raw="content"></main>
+		        </box-l>
+
+	      </center-l>
+    </body>
+</html>

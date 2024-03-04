@@ -1,0 +1,9 @@
+---
+layout: layouts/base.webc
+---
+
+<stack-l>
+    <h1 @raw="title"></h1>
+	<time :@value="date" @machine-format="yyyy-LL-dd"></time>
+    <template @raw="content" webc:nokeep></template>
+</stack-l>

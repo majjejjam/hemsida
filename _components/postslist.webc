@@ -1,0 +1,8 @@
+<ul>
+  <li webc:for="item of $data.collections.post">
+		<a :href="item.url" @raw="item.data.title"></a>
+    <small>
+      <date :@value="item.data.date"></date>
+    </small>
+  </li>
+</ul>
