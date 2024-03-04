@@ -1,19 +1,18 @@
-const pluginWebc = require("@11ty/eleventy-plugin-webc");
-const { EleventyRenderPlugin } = require("@11ty/eleventy")
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation")
+import pluginWebc from "@11ty/eleventy-plugin-webc";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
-module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("../bundle.css");
-    eleventyConfig.addPlugin(pluginWebc);
-    eleventyConfig.addPlugin(EleventyRenderPlugin);
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+export default function(eleventyConfig) {
+		eleventyConfig.addPassthroughCopy("bundle.css");
+		eleventyConfig.addPassthroughCopy("assets/fonts");
+		eleventyConfig.addPlugin(pluginWebc);
+		eleventyConfig.addPlugin(pluginRss);
 
-    return {
-	dir: {
-	    input: "content",
-	    includes: "../_includes",
-	    data: "../_data",
-	    output: "_site"
-	},
-    };
+		return {
+				dir: {
+						input: "content",
+						includes: "../_includes",
+						data: "../_data",
+						output: "_site"
+				},
+		};
 }
