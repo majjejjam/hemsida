@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html :lang="metadata.language">
+  <head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title @text="title || metadata.title"></title>
+	  <meta name="description" :content="description || metadata.description">
+	  <style @raw="getBundle('css')" webc:keep></style>
+	  <link rel="stylesheet" href="../../bundle.css">
+  </head>
+  <body>
+	  <center-l>
+	    <a href="#skip" class="visually-hidden">Hoppa till innehåll</a>
+      <site-header></site-header>
+
+	    <box-l>
+		    <main id="skip" @raw="content"></main>
+		  </box-l>
+
+	  </center-l>
+  </body>
+</html>

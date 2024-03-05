@@ -1,5 +1,6 @@
 ---
 title: Välkommen
+date: 2016-01-01
 ---
 
 Hej, läsare kär. Varmt välkommen. Jag heter Miró -- det är min hemsida

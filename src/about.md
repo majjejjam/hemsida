@@ -1,6 +1,6 @@
 ---
 title: Om
-layout: layouts/base.webc
+layout: base.webc
 tags: nav
 ---
 # Om hemsidan
