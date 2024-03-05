@@ -5,8 +5,8 @@
     font-style: normal;
     font-display: swap;
     src: local(''),
-         url("./assets/fonts/montserrat/Montserrat-Regular.woff2") format("woff2"),
-         url("./assets/fonts/montserrat/Montserrat-Regular.woff") format("woff");
+         url("/assets/fonts/montserrat/Montserrat-Regular.woff2") format("woff2"),
+         url("/assets/fonts/montserrat/Montserrat-Regular.woff") format("woff");
 }
 
 /** Montserrat Regular-Italic **/
@@ -16,8 +16,8 @@
     font-style: italic;
     font-display: swap;
     src: local(''),
-         url("./assets/fonts/montserrat/Montserrat-Italic.woff2") format("woff2"),
-         url("./assets/fonts/montserrat/Montserrat-Italic.woff") format("woff");
+         url("/assets/fonts/montserrat/Montserrat-Italic.woff2") format("woff2"),
+         url("/assets/fonts/montserrat/Montserrat-Italic.woff") format("woff");
 }
 
 /** Montserrat Bold **/
@@ -27,8 +27,8 @@
     font-style: normal;
     font-display: swap;
     src: local(''),
-         url("./assets/fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
-         url("./assets/fonts/montserrat/Montserrat-Bold.woff") format("woff");
+         url("/assets/fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
+         url("/assets/fonts/montserrat/Montserrat-Bold.woff") format("woff");
 }
 /* Box sizing rules */
 *,
