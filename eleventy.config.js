@@ -3,7 +3,7 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import markdownIt from "markdown-it";
 
 export default function(eleventyConfig) {
-		eleventyConfig.addPassthroughCopy("bundle.css");
+		eleventyConfig.addPassthroughCopy("styles.css");
 		eleventyConfig.addPassthroughCopy("assets/fonts");
 
 	  eleventyConfig.addPlugin(pluginWebc, {

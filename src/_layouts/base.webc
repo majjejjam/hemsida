@@ -7,7 +7,7 @@
 	  <title @text="title || metadata.title"></title>
 	  <meta name="description" :content="description || metadata.description">
 	  <style @raw="getBundle('css')" webc:keep></style>
-	  <link rel="stylesheet" href="../../bundle.css">
+	  <link rel="stylesheet" href="../../styles.css">
   </head>
   <body>
 	  <center-l>
