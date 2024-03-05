@@ -1,6 +1,6 @@
 ---
 title: Hem
-layout: base.webc
+layout: base
 ---
 
 <postslist></postslist>

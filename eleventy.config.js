@@ -16,5 +16,6 @@ export default function(eleventyConfig) {
 						includes: "_components",
             layouts: "_layouts",
 				},
+		    htmlTemplateEngine: 'webc',
 		};
 }
