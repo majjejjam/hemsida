@@ -1,4 +1,4 @@
-@layer reset, default;
+@layer reset, default, variables;
 
 /** Montserrat Regular **/
 @font-face {
@@ -31,6 +31,22 @@
     src: local(''),
          url("/assets/fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
          url("/assets/fonts/montserrat/Montserrat-Bold.woff") format("woff");
+}
+
+@layer variables {
+    :root {
+        --surface-1: #eee;
+        --surface-2: #ccc;
+        --foreground-1: black;
+        --foreground-2: #1b1b1b;
+
+        @media screen and (prefers-color-scheme: dark) {
+            --surface-1: black;
+            --surface-2: #1b1b1b;
+            --foreground-1: #eee;
+            --foreground-2: #ccc;
+        }
+    }
 }
 
 @layer reset {
@@ -109,6 +125,11 @@
 }
 
 @layer default {
+    html {
+        background-color: var(--surface-2);
+        color: var(--foreground-1);
+    }
+
     body {
         font-family: "Montserrat", sans-serif;
     }
