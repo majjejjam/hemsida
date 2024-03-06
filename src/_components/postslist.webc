@@ -1,5 +1,5 @@
 <ul>
-  <li webc:for="item of $data.collections.post">
+  <li webc:for="item of $data.collections.post.reverse()">
 		<a :href="item.url" @raw="item.data.title"></a>
     <small>
       <date :@value="item.data.date"></date>
