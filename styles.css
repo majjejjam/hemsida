@@ -1,4 +1,4 @@
-@layer reset, default, variables;
+@layer reset, default, variables, utility;
 
 /** Montserrat Regular **/
 @font-face {
@@ -186,5 +186,11 @@
     abbr {
         font-variant-caps: all-small-caps;
         letter-spacing: 0.1em;
+    }
+}
+
+@layer utility {
+    .visually-hidden {
+        display: none;
     }
 }
