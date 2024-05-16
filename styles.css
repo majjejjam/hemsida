@@ -1,4 +1,4 @@
-@layer reset, default, variables, utility;
+@layer reset, default, variables, utility, layers;
 
 /** Montserrat Regular **/
 @font-face {
@@ -39,6 +39,8 @@
         --surface-2: #ccc;
         --foreground-1: black;
         --foreground-2: #1b1b1b;
+
+        --measure: 70ch;
 
         /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1140,20,1.25,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
         --step--1: clamp(0.8333rem, 0.7683rem + 0.3252vi, 1rem);
@@ -193,4 +195,26 @@
     .visually-hidden {
         display: none;
     }
+}
+
+@layer layouts {
+  .center {
+    box-sizing: content-box;
+    margin-inline: auto;
+    max-inline-size: var(--measure);
+  }
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .stack > * {
+    margin-block: 0;
+  } 
+
+  .stack > * + * {
+    margin-block-start: var(--space, 1.5rem);
+  }
 }

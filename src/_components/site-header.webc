@@ -1,15 +1,11 @@
 <header class="main-nav">
-	<cluster-l style="align-items: center; justify-content: space-between;">
-		<a webc:if="page.url == '/'" :aria-current="page" class="current-page" @raw="metadata.title"></a>
-		<a webc:else href="/" @raw="metadata.title"></a>
+	<a webc:if="page.url == '/'" :aria-current="page" class="current-page" @raw="metadata.title"></a>
+	<a webc:else href="/" @raw="metadata.title"></a>
 
-		<nav>
-		  <cluster-l role="list" style="justify-content: flex-start;">
-			  <div role="listitem" webc:for="item of $data.collections.nav">
-			    <a webc:if="item.url == page.url" :aria-current="page" class="current-page" @raw="item.data.title"></a>
-			    <a webc:else :href="item.url" @raw="item.data.title"></a>
-			  </div>
-		  </cluster-l>
-		</nav>
-	</cluster-l>
+	<nav>
+	  <ul webc:for="item of $data.collections.nav">
+	    <a webc:if="item.url == page.url" :aria-current="page" class="current-page" @raw="item.data.title"></a>
+	    <a webc:else :href="item.url" @raw="item.data.title"></a>
+	  </ul>
+	</nav>
 </header>
