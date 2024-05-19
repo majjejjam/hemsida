@@ -33,6 +33,17 @@
     url("/assets/fonts/alegreya-sans/AlegreyaSans-Bold.woff") format("woff");
 }
 
+/** Alegreya Sans Black **/
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: local(''),
+    url("/assets/fonts/alegreya-sans/AlegreyaSans-Black.woff2") format("woff2"),
+    url("/assets/fonts/alegreya-sans/AlegreyaSans-Black.woff") format("woff");
+}
+
 /** Alegreya Sans Regular SC **/
 @font-face {
   font-family: "Alegreya Sans SC";
@@ -242,11 +253,39 @@
     font-variant-caps: all-small-caps;
     letter-spacing: 0.1em;
   }
+
+  nav {
+    .logo {
+      font-size: var(--step-3);
+      font-weight: 900;
+      color: var(--accent);
+    }
+    
+    a {
+      color: currentColor;
+    }
+    
+    a[href]:not(:hover) {
+      text-decoration: none;
+    }
+
+    a[href][aria-current="page"] {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+    }
+  }
 }
 
 @layer utility {
   .visually-hidden {
     display: none;
+  }
+
+  .current-page {
+    text-decoration: underline;
   }
 }
 
