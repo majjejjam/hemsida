@@ -1,6 +1,5 @@
 ---
 title: Välkommen
-date: 2016-01-01
 ---
 
 Hej, läsare kär. Varmt välkommen. Jag heter Miró -- det är min hemsida
@@ -17,10 +16,10 @@ något som mig gör jag det även för din.
 ## Godhet
 Denna hemsida är ungefär lika mycket min som din. All kod som får den
 att fungera, alla texter som fyller dess sidor, [utvecklas
-öppet](https://github.com/majjejjam/hemsida) under en
+öppet](https://codeberg.org/majjejjam/hemsida) under en
 [Copyleft-licens](https://sv.wikipedia.org/wiki/Copyleft). Det ger dig
 en frihet som du säkert inte är van med. Men du förtjänar den. Mer
-information finns under fliken [om](../about.html).
+information finns under [fliken om](../../about).
 
 Det finns en vanlig, men inte strikt nödvändig, följd av denna
 öppenhet: respekt för din integritet. Den här hemsidan analyserar inte
