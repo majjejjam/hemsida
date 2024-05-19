@@ -1,3 +1,5 @@
+<h1>Inlägg</h1>
+
 <ul>
   <li webc:for="item of $data.collections.post.reverse()">
 		<a :href="item.url" @raw="item.data.title"></a>
