@@ -1,11 +1,17 @@
-<header class="main-nav">
-	<a webc:if="page.url == '/'" :aria-current="page" class="current-page" @raw="metadata.title"></a>
-	<a webc:else href="/" @raw="metadata.title"></a>
-
+<header webc:root="override">
 	<nav>
-	  <ul webc:for="item of $data.collections.nav">
-	    <a webc:if="item.url == page.url" :aria-current="page" class="current-page" @raw="item.data.title"></a>
-	    <a webc:else :href="item.url" @raw="item.data.title"></a>
-	  </ul>
+		<div class="cluster" style="justify-content: space-between; align-items: center;">
+			<a webc:if="page.url == '/'" :aria-current="page" class="current-page" @raw="$data.metadata.title"></a>
+			<a webc:else href="/" @raw="$data.metadata.title"></a>
+
+			<div class="cluster" style="justify-content: flex-start;">
+				<ul>
+				  <li webc:for="item of $data.collections.nav">
+				    <a webc:if="item.url == page.url" :aria-current="page" class="current-page" @raw="item.data.title"></a>
+				    <a webc:else :href="item.url" @raw="item.data.title"></a>
+				  </li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 </header>
