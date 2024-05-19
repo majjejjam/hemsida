@@ -216,12 +216,14 @@
   }
 
   h1 {
+    font-style: italic;
     margin-block-end: var(--space-s);
     font-size: var(--step-5);
     line-height: var(--line-height-xs);
   }
 
   h2 {
+    font-style: italic;
     margin-block-start: var(--space-m);
     margin-block-end: var(--space-xs);
     font-size: var(--step-4);
@@ -229,6 +231,7 @@
   }
 
   h3 {
+    font-style: italic;
     margin-block-start: var(--space-s);
     margin-block-end: var(--space-xs);
     font-size: var(--step-3);
