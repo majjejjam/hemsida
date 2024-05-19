@@ -245,12 +245,6 @@
   .visually-hidden {
     display: none;
   }
-
-  .accent {
-    color: var(--accent);
-    text-transform: lowercase;
-    font-family: "Alegreya Sans SC";
-  }
 }
 
 @layer layouts {
